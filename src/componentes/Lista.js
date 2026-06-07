@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import music from '../assets/1-01. Title Screen.mp3';
+import music from '../assets/title-screen.mp3';
 import {useRef} from "react";
 import '../App.css';
 
