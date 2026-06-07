@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e53935;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Contenedor principal de la pokedex */
+.pokedex-container {
+  max-width: 500px;
+  margin: 40px auto;
+  border: 10px solid #b71c1c;
+  border-radius: 20px;
+  background-color: #f44336;
+  padding: 20px;
+  box-shadow: 0 0 25px #000;
+  color: white;
+}
+
+/* Título */
+.pokedex-header {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Pantalla que muestra imagen */
+.pokedex-screen {
+  background-color: #76a35d;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  text-align: center;
+  border: 4px inset #33691e;
+  color: #000;
+  box-shadow: inset 0 0 10px #3e4e35;
+}
+
+.pokedex-screen h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+}
+
+.pokedex-screen img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Input de búsqueda */
+.pokedex-input {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pokedex-input label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.pokedex-input input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  text-align: center;
+  outline: none;
+}
+
+/* Lista de pokemones */
+.pokemon-list {
+  list-style: none;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: #fff3e0;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #ff9800;
+  box-shadow: inset 0 0 5px #ccc;
+}
+
+.pokemon-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.pokemon-list li:last-child {
+  border-bottom: none;
+}
+
+/* Botón de imagen */
+.pokemon-list button {
+  background-color: #03a9f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pokemon-list button:hover {
+  background-color: #0288d1;
+}
+
+/* Botón "Siguiente" */
+.siguiente-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.siguiente-button:hover {
+  background-color: #388e3c;
+}
+
+/* Scroll personalizado */
+.pokemon-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pokemon-list::-webkit-scrollbar-thumb {
+  background-color: #ff9800;
+  border-radius: 5px;
+}
+.music-toggle-button {
+  background-color: #ffeb3b;
+  color: #000;
+  border: 3px solid #fbc02d;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #555;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.music-toggle-button:hover {
+  background-color: #fdd835;
+  transform: scale(1.05);
+}
